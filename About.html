@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About College Mark Automation System</title>
+     <link rel="icon" href="logo.jpeg">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <style>
+        .navbar {
+            box-shadow: 0 4px 6px -1px rgb(35 28 28 / 67%);
+            background-color: #e9f2fb;
+            /* Light blue background color */
+        }
+
+        /* Adjust carousel height and image size */
+        .carousel-item img {
+
+            max-height: 300px;
+            object-fit: cover;
+        }
+
+        /* Add some gap from the navbar */
+        .carousel-container {
+            margin-top: 20px;
+        }
+
+        @media (max-width: 768px) {
+            .carousel-item img {
+                max-height: 120px;
+            }
+        }
+
+        /* Preloader styles */
+  .preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+  }
+  
+  .spinner {
+    width: 50px;
+    height: 50px;
+    border: 5px solid #007bff;
+    border-top: 5px solid #fff;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  /* Make the iframe responsive */
+.map-responsive {
+    overflow: hidden;
+    padding-bottom: 56.25%; /* Aspect ratio (9:16 for 16:9) */
+    position: relative;
+    height: 0;
+}
+
+.map-responsive iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+    </style>
+</head>
+
+<body>
+    <!-- Preloader -->
+<div class="preloader">
+    <div class="spinner"></div>
+  </div>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+        <a class="navbar-brand" href="https://cmas.co.in/">
+            <img src="logo.jpeg" width="30" height="30" class="d-inline-block align-top" alt="">
+            CMAS
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item ">
+                    <a class="nav-link" href="https://cmas.co.in/">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://results.cmas.co.in">Results</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact Us</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0" action="https://admin.cmas.co.in/">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit" >Admin Login</button>
+            </form>
+        </div>
+    </nav>
+
+   
+<div class="container mt-5">
+    <h1 class="text-center mb-4">Enhancing Efficiency: College Mark Automation System</h1>
+    
+    <div class="row">
+      <div class="col-md-6">
+        <h2>Overview of the System</h2>
+        <p>Briefly introduce the purpose and scope of the system. Highlight its features such as automated grade calculations, real-time updates, and customizable reporting capabilities. Emphasize its compatibility with existing student information systems and ease of integration.</p>
+      </div>
+      <div class="col-md-6">
+        <h2>Student Interface</h2>
+        <p>Describe the user-friendly interface designed for students to access their grades securely. Illustrate features such as grade breakdowns, GPA calculations, and graphical representations of academic progress. Emphasize the system's ability to provide personalized feedback and recommendations for improvement.</p>
+      </div>
+    </div>
+  
+    <div class="row">
+      <div class="col-md-6">
+        <h2>Faculty Interface</h2>
+        <p>Explain how instructors can efficiently input and manage grades for their courses. Showcase features like gradebook customization, bulk upload options, and grade validation checks. Highlight tools for communication with students regarding their performance and academic goals.</p>
+      </div>
+      <div class="col-md-6">
+        <h2>Administrative Dashboard</h2>
+        <p>Discuss the centralized dashboard for administrators to oversee overall academic performance. Outline features for generating comprehensive reports, tracking trends, and identifying areas for improvement. Emphasize the system's role in facilitating data-driven decision-making at the institutional level.</p>
+      </div>
+    </div>
+  
+    <div class="row">
+      <div class="col-md-6">
+        <h2>Integration and Security</h2>
+        <p>Address the seamless integration of the system with existing student information management systems. Highlight security measures such as role-based access control, data encryption, and regular backups. Assure stakeholders of compliance with relevant data protection regulations (e.g., GDPR, FERPA).</p>
+      </div>
+      <div class="col-md-6">
+        <h2>Training and Support</h2>
+        <p>Provide information on training resources and support channels available to faculty, students, and administrators. Offer tutorials, FAQs, and user guides to facilitate smooth adoption and usage of the system. Encourage feedback mechanisms to continuously improve the user experience and functionality.</p>
+      </div>
+    </div>
+  
+    <div class="row">
+      <div class="col-md-6">
+        <h2>Benefits and Impact</h2>
+        <p>Enumerate the tangible benefits of implementing the College Mark Automation System, including time savings, reduced errors, and improved transparency. Discuss the positive impact on student engagement, academic performance, and institutional reputation. Share success stories or testimonials from early adopters to underscore the system's effectiveness.</p>
+      </div>
+    </div>
+  </div>
+          
+
+
+
+
+
+      
+      <footer class="bg-dark text-light">
+        <div class="container py-5">
+          <div class="row">
+            <div class="col-md-4">
+              <h4>About Us</h4>
+              <p>We are committed to providing innovative solutions to help you achieve your goals.</p>
+            </div>
+            <div class="col-md-4">
+              <h4>Quick Links</h4>
+              <ul class="list-unstyled">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact Us</a></li>
+              </ul>
+            </div>
+           
+              <div class="col-md-4">
+                <h4>Location</h4>
+                <div class="map-responsive">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3737.711865844546!2d85.86107941108304!3d20.477024280958616!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a19120bdb03a2ef%3A0x12e8672e86b165ab!2sShailabala%20Women&#39;s%20College!5e0!3m2!1sen!2sin!4v1709288195342!5m2!1sen!2sin" width="400" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+            
+            <div class="col-md-4">
+              <h4>Contact Us</h4>
+              <p>123 Main Street<br>City, State ZIP<br>Email: support@cmas.co.in<br>Phone: 123-456-7890</p>
+            </div>
+          </div>
+          <hr>
+          <div class="text-center">
+            <p>&copy; 2024 CMAS. All rights reserved. <a href="https://sidhantapradhan.cmas.co.in">know developer?</a></p>
+          </div>
+        </div>
+      </footer>
+   
+      <script>
+        // Set a timeout to hide the preloader after 10 seconds (10000 milliseconds)
+        setTimeout(function() {
+          document.querySelector('.preloader').style.display = 'none';
+        }, 3000);
+        function adminPage()
+        {
+          window.location.href = "https://cmas.co.in/";
+        }
+        document.getElementById("myButton").addEventListener("click", function() {
+            window.location.href = "https://cmas.co.in/";
+        });
+      </script>
+</body>
+
+</html>

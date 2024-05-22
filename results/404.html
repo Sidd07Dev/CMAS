@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>404 Error - Page Not Found</title>
+<style>
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+  }
+
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .error-container {
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 120px;
+    color: #ff3d00;
+    margin: 0;
+    animation: shake 0.5s infinite alternate;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  }
+
+  p {
+    font-size: 24px;
+    color: #333;
+    margin-top: 20px;
+  }
+
+  @keyframes shake {
+    0% { transform: rotate(-5deg); }
+    100% { transform: rotate(5deg); }
+  }
+
+  .button {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #ff3d00;
+    color: #fff;
+    text-decoration: none;
+    font-size: 24px;
+    border-radius: 30px;
+    margin-top: 40px;
+    transition: background-color 0.3s;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+
+  .button:hover {
+    background-color: #ff6d00;
+  }
+
+  /* Additional styles for animation */
+  .cloud {
+    position: absolute;
+    top: 100px;
+    left: -200px;
+    opacity: 0.8;
+    animation: moveClouds 20s linear infinite;
+    pointer-events: none;
+  }
+
+  .cloud img {
+    width: 200px;
+    height: auto;
+  }
+
+  @keyframes moveClouds {
+    from {
+      transform: translateX(-200px);
+    }
+    to {
+      transform: translateX(calc(100% + 200px));
+    }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="error-container">
+    <h1>404</h1>
+    <p>Oops! Looks like this page is lost in the clouds.</p>
+    <a href="/" class="button">Go Back Home</a>
+  </div>
+</div>
+
+<!-- Additional cloud animation -->
+<div class="cloud">
+  <img src="https://www.pngkit.com/png/detail/144-1440964_cloud-clipart-png-clipart-clouds-png.png" alt="Cloud">
+</div>
+
+<script>
+  // JavaScript for additional animations (optional)
+  document.addEventListener("DOMContentLoaded", function() {
+    const h1 = document.querySelector('h1');
+    setInterval(() => {
+      h1.style.color = getRandomColor();
+    }, 1000);
+  });
+
+  function getRandomColor() {
+    const letters = '0123456789ABCDEF';
+    let color = '#';
+    for (let i = 0; i < 6; i++) {
+      color += letters[Math.floor(Math.random() * 16)];
+    }
+    return color;
+  }
+</script>
+</body>
+</html>

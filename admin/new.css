@@ -1,0 +1,181 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body{
+    height: 100vh;
+    width: 100vw;
+}
+.sidebar
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #18162a;
+    height: 100%;
+    width: 15%;
+}
+.sidebar .logo-details
+{
+   height: 10%;
+   width: 100%;
+   display: flex;  
+   align-items: center;
+}
+.sidebar .logo-details i{
+    font-size: 30px;
+    color: #fff;
+    
+    height: 3rem;
+    min-width: 3rem;
+    text-align: center;
+    line-height: 3rem;
+    }
+.sidebar .logo-details .logo_name{
+font-size: 2rem;
+color: #fff;
+font-weight: 600;
+}
+.sidebar .nav-link
+{
+  
+    height: 100%;
+    padding-top: 1.3rem;
+}
+.sidebar .nav-link li{
+    width: 100%;
+    position: relative;
+    list-style: none;
+     transition: all 0.4s ease;
+}
+.sidebar .nav-link li:hover{
+    background: #1d1b31;
+}
+.sidebar .nav-link li .icon-link
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.sidebar .nav-link li i{
+    height: 3rem;
+    min-width: 3rem;
+    text-align: center;
+    line-height: 3.2rem;
+    color: #fff;
+    font-size: 1rem;
+    transform: all 0.3s ease;
+}
+.sidebar .nav-link li.ShowMenu i.arrow
+{
+transform: rotate(-180deg);
+}
+.sidebar .nav-link li a{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+.sidebar .nav-link  li  a .link_name
+{
+    font-size: 1rem;
+    font-weight: 400;
+    color: #fff;
+}
+.sidebar .nav-link  li  .sub-menu
+{
+    padding: 0.01rem 0.01rem 1rem 4rem;
+    margin-top: 0.1rem;
+    background: #1d1b31;
+     display: none;
+}
+
+.sidebar .nav-link  li.ShowMenu  .sub-menu
+{
+    display: block;
+}
+.sidebar .nav-link  li  .sub-menu a{
+    color: #fff;
+    font-size: 1rem;
+    padding: 0.35rem 0;
+    white-space: nowrap;
+    opacity: 0.6;
+    transition: all 0.3s ease;
+}
+.sidebar .nav-link  li  .sub-menu a:hover{
+    opacity: 1;
+}
+.sidebar .close .nav-link  li  .sub-menu {
+    position: absolute;
+    left: 100%;
+    top: -10px;
+    margin-bottom: 0;
+    padding: 10px 20px ;
+    border-radius: 0 6px 6px 0;
+    transition: all 0.4s ease;
+    opacity: 0;
+    pointer-events: none;
+}
+.sidebar .close .nav-link  li:hover  .sub-menu 
+{
+top:0;
+opacity: 1;
+pointer-events: auto;
+}
+.sidebar  .nav-link  li  .sub-menu .link_name
+{
+display: none;
+}
+.sidebar .close .nav-link  li  .sub-menu .link_name
+{
+    font-size: 18px;
+    opacity: 1;
+    display: block;
+}
+.sidebar li .profile-details
+{
+   
+    height: 3rem;
+    width: 100%;
+  top:2rem;
+  background: rgb(16, 15, 15);
+  display: flex;
+  align-items: center;
+  /* margin-top: 17rem; */
+}
+.sidebar .nav-link li  .profile-details img{
+height: 3rem;
+width: 3rem;
+object-fit: cover;
+border-radius: 50%;
+margin: 0 0.1rem 0 0.2rem ;
+background: #1d1b31;
+padding: 3px;
+}
+.sidebar .profile-details .profile_name
+{
+    width: 100%;
+    height: 50%;
+font-size: 1rem;
+font-weight: 500;
+color: aqua;
+}
+.sidebar .profile-details .job
+{
+    font-size: 0.5rem;
+    width: 50%;
+    color: white;
+}
+
+.main{
+    height: 100vh;
+    width: 100vw;
+   
+   
+}
+body{
+    background-image: url(background.jpg);
+    background-size: cover;
+}

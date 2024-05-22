@@ -1,0 +1,68 @@
+
+.streams
+{
+    height: 100vh;
+    width: 85%;
+   /* background-image: url(UGbackground.jpg); */
+   background-size: cover;
+   background-color: rgba(255, 255, 255, 0.192);
+   backdrop-filter: blur(15px);
+   position:fixed ;
+   top: 0;
+   right: 0;
+    display: flex;
+    justify-content: space-around;
+}
+.box-container
+{
+    margin: auto;
+    height: 70%;
+    width: 70%;
+    background-color: rgba(255, 255, 255, 0.192);
+    backdrop-filter: blur(155px);
+    border: 2px solid black;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+   
+}
+.boxes
+{
+    margin: auto;
+    height: 90%;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.192);
+    backdrop-filter: blur(15px);
+    border-radius: 10px 10px 0 0;
+    display: flex;
+    align-items: center;
+    gap: 2%;
+    padding: 0 0 0 5%;
+   
+}
+.boxbutton{
+    height: 10%;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.192);
+    backdrop-filter: blur(15px);
+    border-radius:0 0 10px 10px;
+    display: flex;
+    align-items: center;
+}
+.boxbutton button{
+    height: 50%;
+    width: 20%;
+    margin: auto;
+    text-decoration: none;
+}
+.boxbutton button a{
+    text-decoration: none;
+    color: inherit;
+}
+.boxes ul{
+    height: 60%;
+    width: 30%;
+}
+

@@ -1,0 +1,66 @@
+/* body{
+  
+} */
+.Form-Container
+{
+    height: 100vh;
+    width: 85%;
+    background-color: rgba(255, 255, 255, 0.125);
+    backdrop-filter: blur(155px);
+   background-size: cover;
+   position:fixed ;
+   top: 0;
+   right: 0;
+    display: flex;
+   
+    justify-content: space-around;
+}
+.Form-main
+{
+    height: 90%;
+    width: 90%;
+    background-color: rgba(255, 255, 255, 0.353);
+    backdrop-filter: blur(32px);
+    margin: auto;
+    padding: 5% 5% 5% 5%;
+    border-radius: 20px;
+   
+}
+
+.inputEl
+{
+    height: 20px;
+    width: 90px;
+    margin-left: auto;
+}
+form{
+    height: 60%;
+    width: 100%;
+   
+    margin: 15% 0% 0% 4%;
+}
+#submit-btn
+{
+    height: 30px;
+    width: 120px;
+    background-color: transparent;
+    border-radius: 5px;
+    margin: 9% 0% 0% 22%;
+}
+.submit-btn2
+{
+    height: 30px;
+    width: 120px;
+    background-color: transparent;
+    border-radius: 15px;
+    margin: 9% 0% 0% 22%;
+} 
+#submit-btn:hover{
+    height: 30px;
+    width: 120px;
+    background-color: rgba(0, 0, 255, 0.685);
+    color: white;
+    font-weight: bold;
+    border-radius: 20px;
+    margin: 9% 0% 0% 22%;
+}
